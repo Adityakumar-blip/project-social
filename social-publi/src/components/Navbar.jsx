@@ -22,8 +22,8 @@ export default class Navbar extends Component {
                   <Link  className='nav-link' to={'/brands'}>
                     <h5> Brands</h5>
                   </Link>
-                  <Link  className='nav-link' to={'/ourwork'}>
-                    <h5>Our Work</h5>
+                  <Link  className='nav-link' to={'/services'}>
+                    <h5> Services </h5>
                   </Link>
                   <Link className='nav-link'  to={'/tools'}>
                     <h5>Tools</h5>
