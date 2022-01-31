@@ -17,7 +17,7 @@ import './App.css';
  import ContactUs from './components/contactUs';
  import { BrowserRouter as Router,Routes ,Switch ,Route, BrowserRouter } from 'react-router-dom';
 import LetsTalk from './components/LetsTalk';
-function App() {
+function App() {  
   return (
     <>
 
