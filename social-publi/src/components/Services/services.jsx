@@ -46,7 +46,7 @@ export default class influencer extends Component {
           </div>
            <div style={{width:'100%' ,height:'6px' , backgroundColor:'#0E7895'}}></div>  
           <div>
-          <div className="service-section"><h1> TRACKING & MEASUREMENT WITH INFLUSOFT™</h1></div>
+          <div className="service-section middle"><h1> TRACKING & MEASUREMENT WITH INFLUSOFT™</h1></div>
           </div>
           <div style={{width:'100%' ,height:'6px' , backgroundColor:'#0E7895'}}></div>  
           <div>

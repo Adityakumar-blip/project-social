@@ -1,41 +1,74 @@
- 
+import React, {useState} from 'react';
+import './Navbar.css';
+import brand from './image/brandlogo.png';
+import {Link} from 'react-router-dom';
 
-import React, { Component } from 'react'
-import  {Link} from 'react-router-dom';
-export default class Navbar extends Component {
-  render() {
-    return (
-       <>
-         <nav className="navbar navbar-expand-lg navbar-light   navbar-container">
-            <div className="container-fluid fluid">
-              <a className="navbar-brand brand-name" href="#">   SocialPubli </a>
-              <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                  <Link  className='nav-link'  to={'/'}>
-                    <h5>Home</h5>
-                  </Link>
-                  <Link className='nav-link'  to={'/influencer'}>
-                    <h5> Influencer</h5>
-                  </Link>
-                  <Link  className='nav-link' to={'/brands'}>
-                    <h5> Brands</h5>
-                  </Link>
-                  <Link  className='nav-link' to={'/services'}>
-                    <h5> Services </h5>
-                  </Link>
-                  <Link className='nav-link'  to={'/tools'}>
-                    <h5>Tools</h5>
-                  </Link>
-                  <Link className='nav-link'  to={'/contactus'}>
-                    <h5>Contact Us</h5>
-                  </Link>
-                   
-              </div>
+
+
+const Navbar = () =>{
+
+    const [show, setShow] = useState(false);
+    return(
+        <>
+        <section>
+    <div className='nav-wrapper container-fluid nav-bg '>
+            <div className='row'>
+        <nav className=" navbar nav-container navbar-expand-lg navbar-light  ">
+            <div className="container-fluid">
+                <a className="navbar-brand" href="#">
+                <img src={brand} alt=".."/>
+                </a>
+                    <button className="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarSupportedContent" 
+                    aria-controls="navbarSupportedContent" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation"
+                    onClick={() => setShow(!show)}>
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+                <div className={`collapse navbar-collapse ${show ? "show" : ""}`} 
+                id="navbarSupportedContent">
+                    <ul className="navbar-nav me-auto mb-2 mb-lg-0"/>
+                        <li className="nav-item">
+                        <Link className="nav-link active" 
+                        aria-current="page" 
+                        to="/">Home</Link>
+                        </li>
+                        <li className="nav-item">
+                        <Link className="nav-link" to="/influencer">Influencers</Link>
+                        </li>
+
+                        
+                        <li className="nav-item">
+                        <Link className="nav-link" to="/Brands" >Brands</Link>
+                        </li>
+
+                        
+                        <li className="nav-item">
+                        <Link className="nav-link" to="/tools" >Tools</Link>
+                        </li>
+
+                        
+                        <li className="nav-item">
+                        <Link className="nav-link" to="/services">Our Work</Link>
+                        </li>
+
+                        <button type="button" className="contact-button">
+                            <Link className='nav-link' to='/contactus'>Contact Us</Link>
+                        
+                        </button>
+                </div>
             </div>
-         </nav>
-       </>
-    )
-  }
-}
+        </nav>
+
+            </div>
+        </div>
+        </section>
+        </>
+
+    );
+};
+
+export default Navbar;

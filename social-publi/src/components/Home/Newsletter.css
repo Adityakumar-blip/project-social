@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Playfair+Display&family=Playfair+Display+SC&family=Poppins&display=swap');
+
+body{
+    z-index: -10;
+}
+
+.card-body h2 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 50px;
+    text-align: center;
+}
+
+.card-body h4{
+    text-align: center;
+    
+}
+
+.form-floating{
+    margin-top: 50px;
+    width: 80%;
+    margin-left: 70px;
+    border-radius: 10px;
+}
+
+.form-floating label{
+    margin-left: 1.5rem;
+    margin: 10px;
+}
+
+.form-floating email{
+    margin-left: 1.5rem;
+}

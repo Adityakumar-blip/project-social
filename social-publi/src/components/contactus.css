@@ -59,7 +59,7 @@ form>div{
 
 textarea{
     width: 81%;
-    border-radius: 0.3rem;
+    border-radius: 0.5rem;
 }
 
 .submitbtn{
@@ -92,4 +92,9 @@ textarea{
 
 .otherOptionsToConnect>div>p{
     color: rgb(189, 189, 168);
+}
+
+input{
+    border-radius: 0.5rem;
+    border: 1px solid #1A4E5C;
 }

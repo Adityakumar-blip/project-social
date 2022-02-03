@@ -33,7 +33,7 @@ export default class contactUs extends Component {
               <div className="leftRight">
                 <div className="left">
                   <div className="firstName">
-                    <h6>First Name</h6>
+                    <h6>First Name *</h6>
 
                     <input
                       spellCheck="false"
@@ -68,7 +68,7 @@ export default class contactUs extends Component {
                     />
                   </div>
                   <div className="Phone">
-                    <h6>Phone Number</h6>
+                    <h6>Phone Number *</h6>
                     <input type="number" name="PhoneNumber" id="PhoneNumber" />
                   </div>
                   <div className="location">
@@ -94,7 +94,7 @@ export default class contactUs extends Component {
               </div>
 
               <div className="TextPlace">
-                <h6>Tell Me something about yourself</h6>
+                <h6>Tell Me something about yourself *</h6>
                 <textarea
                   name="TellMe"
                   id="TellMe"
