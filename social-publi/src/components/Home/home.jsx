@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-import bgImg from '../video/backgroundImg.mp4';
+import bgImg from '../video/bgvideo.mp4'
 import {FiArrowDown} from 'react-icons/fi';
 import Socialsection from './Socialsection'
 import Carousel from './Carousel';
@@ -16,7 +16,7 @@ const Home = () => {
     <section className='landing-page'>
       <header>
       <div className="video-container">
-        <video src={bgImg} className="video"  loop muted>
+        <video src={bgImg} className="video" autoPlay loop muted type="video/mp4">
             </video>
             <div className="main-heading-wrapper">
             <h1 className="main-heading">Influencer Marketing<br/> 
