@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Playfair+Display+SC&family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Playfair+Display&family=Playfair+Display+SC&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lora:wght@500&family=Playfair+Display&family=Playfair+Display+SC&family=Poppins&display=swap');
 
 
-*{
+* {
     margin:0;
     padding:0;
 }
@@ -11,6 +12,7 @@
 .social-container{
     background-color: black;
     width: 100%;
+    overflow: hidden;
 }
 
 .social-body{
@@ -19,11 +21,11 @@
 .social-body h2{
     align-items: center;
     text-transform:inherit;
-    font-family: 'poppins', sans-serif;
-    margin-left: 40px;
+    font-family: 'Lora', sans-serif;
+    margin-left: 4rem;
     margin-top: 20rem;
     color: aliceblue;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 .sec-img{

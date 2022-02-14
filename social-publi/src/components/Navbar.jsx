@@ -30,29 +30,29 @@ const Navbar = () =>{
                     </button>
                 <div className={`collapse navbar-collapse ${show ? "show" : ""}`} 
                 id="navbarSupportedContent">
-                    <ul className="navbar-nav me-auto mb-2 mb-lg-0"/>
+                    <ul className="navbar-nav me-auto mb-2 mb-lg-0 menu"/>
                         <li className="nav-item">
                         <Link className="nav-link active" 
                         aria-current="page" 
                         to="/">Home</Link>
                         </li>
                         <li className="nav-item">
-                        <Link className="nav-link" to="/influencer">Influencers</Link>
+                        <Link className="nav-link active" to="/influencer">Influencers</Link>
                         </li>
 
                         
                         <li className="nav-item">
-                        <Link className="nav-link" to="/Brands" >Brands</Link>
+                        <Link className="nav-link active" to="/Brands" >Brands</Link>
                         </li>
 
                         
                         <li className="nav-item">
-                        <Link className="nav-link" to="/tools" >Tools</Link>
+                        <Link className="nav-link active" to="/tools" >Tools</Link>
                         </li>
 
                         
                         <li className="nav-item">
-                        <Link className="nav-link" to="/services">Our Work</Link>
+                        <Link className="nav-link active" to="/services">Our Work</Link>
                         </li>
 
                         <button type="button" className="contact-button">

@@ -11,7 +11,7 @@ const Clients = () => {
           <section id="clients" class="section-bg">
             <div className="container">
               <div className="section-header">
-                <h3>Our CLients</h3>
+                <h2>Our Clients</h2>
                 <p>Meet our happy clients</p>
               </div>
               <div className="row no-gutters clients-wrap clearfix wow fadeInUp">

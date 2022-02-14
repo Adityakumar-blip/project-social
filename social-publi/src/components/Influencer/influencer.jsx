@@ -7,7 +7,7 @@ function TestimonialCol(props) {
   return (
     <>
       {props.Id % 2 === 0 ? (
-        <div id="1" className="testimonial-row">
+        <div id="1" className="testimonial-row brighten">
           <div id="0" className="testimonial-col">
             <div className="big-influencer">
               <a href={workData[props.Id][0].link} className="  influencer">
@@ -41,7 +41,7 @@ function TestimonialCol(props) {
           </div>
         </div>
       ) : (
-        <div id="1" className="testimonial-row">
+        <div id="1" className="testimonial-row brighten">
           <div id="1" className="testimonial-col">
             <div className="small-influencer">
               <a href={workData[props.Id][1].link} className=" influencer">

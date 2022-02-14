@@ -1,8 +1,17 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './Newsletter.css';
 import news from '../image/news.jpg';
 
 const Newsletter = () => {
+    const [input,setInput] =  useState("");
+    const inputhandler = (e) => {
+        setInput(e.target.value);
+    };
+
+    const submitHandler = (e) =>{
+        e.preventDefault();
+        
+    }
   return (
     <>
     <section>
@@ -16,9 +25,12 @@ const Newsletter = () => {
             <div className="card-body">
                 <h2 className="card-title">Ready to Hear from us..</h2>
                 <h4>One Newsletter for daily updates of the market <br/>trends and growing Influencers</h4>
-                <div className="form-floating">
-                    <input type="email" className="rounded-pill form-control" id="floatingInput" placeholder="Enter Your Email"/>
-            </div>
+                <div className="newsletter">
+                  <form className='news-email' onSubmit={submitHandler}>
+                      <input type='email' placeholder='enter your email'  onChange={inputhandler} />
+                      <button type='submit'>Subscribe</button>
+                  </form>
+                </div>
             </div>
         </div>
     </div>
