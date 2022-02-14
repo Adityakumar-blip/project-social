@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Playfair+Display+SC&family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Playfair+Display&family=Playfair+Display+SC&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lora:wght@500&family=Playfair+Display&family=Playfair+Display+SC&family=Poppins&display=swap');
 
 *{
     padding: 0;
@@ -39,4 +40,25 @@
     font-family:'Poppins', sans-serif;
     font-weight: 500;
     font-size:50px;
+}
+
+.main-para{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 18px;
+
+}
+
+.main-button{
+    margin-left: 2rem;
+    width: 15rem;
+    border: 0.5px solid #14abd4;
+    border-radius:40px;
+    background-color: #14abd4;
+    color: #fff;
+}
+
+@media screen and (max-width:600px){
+    .video-container {
+        height:200%;
+    }
 }
